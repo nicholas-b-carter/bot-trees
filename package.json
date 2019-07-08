@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -29,7 +31,9 @@
     "request-promise": "^4.1.1",
     "strformat": "0.0.7",
     "underscore": "^1.8.3",
-    "uuid": "^3.0.0"
-  }
+    "uuid": "^3.0.0",
+    "snyk": "^1.192.4"
+  },
+  "snyk": true
 }
 
